@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snackbar</title>
+    <script type="module" crossorigin src="/vanilla-app-template/2-snackbar.js"></script>
+    <link rel="modulepreload" crossorigin href="/vanilla-app-template/assets/modulepreload-polyfill-B5Qt9EMX.js">
+    <link rel="modulepreload" crossorigin href="/vanilla-app-template/assets/vendor-BbbuE1sJ.js">
+    <link rel="stylesheet" crossorigin href="/vanilla-app-template/assets/vendor-CZjNVMTf.css">
+    <link rel="stylesheet" crossorigin href="/vanilla-app-template/assets/styles-C86oKPX1.css">
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <a class="back-link" href="./index.html">Go back</a>
+        <section class="task-card">
+          <h1 class="main-title">Promise generator</h1>
+          <p class="task-description">
+            Choose a delay and the promise state to trigger a toast.
+          </p>
+
+          <form class="form">
+            <label class="form-label">
+              Delay (ms)
+              <input type="number" name="delay" min="1" required />
+            </label>
+
+            <fieldset class="state-group">
+              <legend>State</legend>
+              <label>
+                <input type="radio" name="state" value="fulfilled" required />
+                Fulfilled
+              </label>
+              <label>
+                <input type="radio" name="state" value="rejected" required />
+                Rejected
+              </label>
+            </fieldset>
+
+            <button type="submit">Create notification</button>
+          </form>
+        </section>
+      </div>
+    </main>
+
+  </body>
+</html>
